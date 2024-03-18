@@ -1,5 +1,5 @@
 export const saveProduct = async (formData, token) => {
-    const response = await fetch('http://localhost:3636/api/products', {
+    const response = await fetch('https://backedcommerce-27eb97359955.herokuapp.com/api/products', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

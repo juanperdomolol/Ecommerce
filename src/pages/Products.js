@@ -13,7 +13,7 @@ function Products() {
     const fetchProducts = async () => {
       const token = localStorage.getItem('token'); 
       try {
-        const response = await fetch('http://localhost:3636/api/products', {
+        const response = await fetch('https://backedcommerce-27eb97359955.herokuapp.com/api/products', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

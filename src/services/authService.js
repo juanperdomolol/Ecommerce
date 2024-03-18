@@ -1,5 +1,5 @@
 export const loginUser = async (formData) => {
-    const response = await fetch('http://localhost:3636/api/users/login', {
+    const response = await fetch('https://backedcommerce-27eb97359955.herokuapp.com/api/users/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -14,7 +14,7 @@ export const loginUser = async (formData) => {
 };
 
 export const registerUser = async (formData) => {
-    const response = await fetch('http://localhost:3636/api/users/register', {
+    const response = await fetch('https://backedcommerce-27eb97359955.herokuapp.com/api/users/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

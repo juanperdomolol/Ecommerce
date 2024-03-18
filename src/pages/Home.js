@@ -12,13 +12,13 @@ function Home() {
     const token = localStorage.getItem('token');
     if (token) {
         setIsLoggedIn(true);
-        const decodedToken = jwtDecode(token); // Decodifica el token
+        const decodedToken = jwtDecode(token);
         setUserName(decodedToken.email);
     } else {
         setIsLoggedIn(false);
         setUserName(null);
     }
-  }, []); // Este efecto se ejecuta solo al montar el componente
+  }, []); 
   const handleLoginButtonClick = () => {
     setIsModalOpen(true);
   };
@@ -28,7 +28,7 @@ function Home() {
   };
 
   const handleLogoutButtonClick = () => {
-    localStorage.removeItem('token'); // Elimina el token del almacenamiento local
+    localStorage.removeItem('token'); 
     setIsLoggedIn(false);
     setUserName(null);
   };
